@@ -1,0 +1,60 @@
+=======================================================================================
+================================== Geometry and Mesh ==================================
+=======================================================================================
+              Dimension                                     Thickness
+                  2                                            0.25
+
+     Number of Nodes per Element     	      Number of Degrees of Freedom per Node
+                  8                                             3
+
+  Length of the Model in X direction            Width of the Model in Y direction
+                 18                                             18
+
+   Number of Elements in X direction            Number of Elements in Y direction
+                  9                                              9
+=======================================================================================
+================================ Material's Properties ================================
+=======================================================================================
+Elastic Modulus     Poisson's Ratio
+     30e6                 0.3
+=======================================================================================
+================================= Boundary Conditions =================================
+=======================================================================================
+1000 for Free , Any other value for Restrain
+
+Left Side:
+Displacement in W     Rotation around Y     Rotation around X
+        0                      1000                    0
+Bottom Side:
+Displacement in W     Rotation around Y     Rotation around X
+        0                      0                     1000
+Right Side:
+Displacement in W     Rotation around Y     Rotation around X
+        1000                      0                     1000
+Up Side:
+Displacement in W     Rotation around Y     Rotation around X
+        1000                      1000                     0
+Number of Additional Restrains
+              0
+X Coordinate     Y Coordinate     Value     Degree of Freedom (1,2 or 3)
+     2                 2            -2                1
+=======================================================================================
+======================================== Loads ========================================
+=======================================================================================
+Nodal Loads:
+Number of Nodal Loads
+         1
+X Coordinate     Y Coordinate     Magnitude     Degree of Freedom (1,2 or 3)
+      18               18           -250                     1
+
+Body Forces:
+Number of Body Forces
+         0
+Magnitude     Degree of Freedom (1,2 or 3)
+    -100                      1
+=======================================================================================
+==================================== Gauss Points =====================================
+=======================================================================================
+Number of Gauss Points for Bending     Number of Gauss Points for Shear
+                3                                     2
+=======================================================================================
