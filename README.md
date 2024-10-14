@@ -1,0 +1,2 @@
+# thickplates-quadrilateral-fortran
+THICK PLATES USING QUADRILATERAL ELEMENTS WITH 8 NODES
